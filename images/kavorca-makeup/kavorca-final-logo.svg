@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.02 163.8">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 8px;
+        letter-spacing: .22em;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #f7931e;
+      }
+
+      .cls-1, .cls-4 {
+        font-family: Fahkwang-ExtraLight, Fahkwang;
+        font-weight: 200;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #000;
+      }
+
+      .cls-5, .cls-6, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #f7931e;
+      }
+
+      .cls-3 {
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        font-size: 126px;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(0 107.1)"><tspan x="0" y="0">Ka orca</tspan></text>
+  <g>
+    <path class="cls-2" d="m147.36,44.69l26.17,56.71,26.17-56.71h-52.35Zm15.26,12.26l-7.02-9.11h13.86l-6.84,9.11Zm14.41-9.11h13.86l-6.84,9.11-7.02-9.11Z"/>
+    <polygon class="cls-5" points="166.53 81.21 180.48 81.21 173.5 98.2 166.53 81.21"/>
+    <polygon class="cls-3" points="197.79 42.41 191.21 23.43 184.63 42.41 197.79 42.41"/>
+    <polygon class="cls-3" points="162.58 42.41 156 23.43 149.42 42.41 162.58 42.41"/>
+    <line class="cls-6" x1="154.34" y1="46.16" x2="170.72" y2="46.16"/>
+    <line class="cls-6" x1="175.76" y1="45.95" x2="192.14" y2="45.95"/>
+  </g>
+  <rect class="cls-7" x="6.32" y="113.97" width="233.73" height="18.2"/>
+  <text class="cls-1" transform="translate(252.39 126.05)"><tspan x="0" y="0" xml:space="preserve">T H E   L U R E  O F T H E  A N I M A L</tspan></text>
+</svg>

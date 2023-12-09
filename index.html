@@ -1,0 +1,285 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Haem Hariharan Project</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  <script src="js/main.js"></script>
+    <style>
+        /* Add any additional styling here */
+        section {
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+        }
+        #logo img {
+      opacity: 0;
+	   opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+    }
+
+
+      </style>
+	   <header id="main-header" class="grid-con">
+        <div class="m-col-start-1 m-col-end-3 col-span-2">
+            <div id="logo" onclick="openIndex()">
+                <img src="assets/Logo/logo.png">
+            </div>
+        </div>
+        <div class="navigation-item m-col-start-5 m-col-end-7 col-span-2">
+            <div id="3d" onclick="openVideos()">3d Video</div>
+        </div>
+        <div class="navigation-item m-col-start-8 m-col-end-10 col-span-2">
+            <div id="grapics"  onclick="openGrapics()" href="gallery.html">Graphic Design</div>
+        </div>
+        <div class="navigation-button m-col-start-11 m-col-end-13 col-span-2" onclick="openContact()">
+            <div id="sayhello"  >  Say Hello  </div>
+			
+        </div>
+     </header>
+</head>
+
+<body>
+    <h1 class="hidden">Haem Hariharan Project</h1>
+   
+    <main>
+    
+    <section class="grid-con" id="herosection">
+            <div class="col-span-full" style="
+">
+                <h1>Designer, Frontend Developer &amp; Mentor</h1>
+                <h3>I Design and code beatifully simple things, and I love what I do.</h3>
+                <img class="face-image" src="assets/face.png">
+                <img class="landing-image" src="assets/landing image.png">
+            </div>
+    </section>
+
+    <section class="full-width-grid-con" id="aboutme">
+            <div class="col-span-full">
+
+    <h1>Hi, I'm Haem. Nice to meet you.</h1>
+    <h3>Having embarked on my freelance design career more than a decade ago, I have engaged in remote projects with various agencies, provided consulting services to startups, and teamed up with skilled individuals to craft digital products tailored for both business and consumer purposes. I possess a quiet confidence, an innate sense of curiosity, and an ongoing commitment to enhancing my design skills, tackling design challenges one step at a time.</h3>
+</div>
+    </section>
+
+    
+    <section id="work">
+        <div class="col-span-full">
+            <h1>My Recent Work
+
+</h1>
+    <h3>Here are a few past design projects I've worked on. Want to see more? Email me.</h3>
+        </div>
+        
+
+
+<div class="grid-con">
+            <div  onclick="openMyWork1()" class="col-span-full m-col-start-2 m-col-end-7 workcard">
+<img src="assets/home-project-image/Bayengage-Project.jpg">
+</div>
+            <div  onclick="openMyWork2()" class="col-span-full m-col-start-7 m-col-end-12 workcard">
+<img src="assets/home-project-image/Cybernexa-Project.jpg">
+</div>
+        </div>
+		<div class="grid-con">
+           
+		   <div  onclick="openMyWork3()" class="col-span-full m-col-start-2 m-col-end-7 workcard">
+<img src="assets/home-project-image/GingaFleets-project.jpg">
+</div>
+
+            <div   onclick="openMyWork4()" class="col-span-full m-col-start-7 m-col-end-12 workcard">
+<img src="assets/home-project-image/Earbud-project.jpg">
+</div>
+        </div>
+        
+        
+    </section>
+
+    <section id="reel">
+        <div class="col-span-full">
+            <h1>Demo Reel</h1>
+    <h3>Here are a Few Video Animation created from Companies</h3>
+        </div>
+        
+
+
+<div class="grid-con">
+            <div class="m-col-start-2 m-col-end-12 videoplayer">
+                <div id="player-container">
+                    <video id="myVideo" poster="assets/demoreel-video/video.jpg" controls>
+                        <source src="assets/demoreel-video/product-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            
+                    <div id="custom-controls">
+                        <button id="play-pause">Play</button>
+                        <input type="range" id="seek-bar" value="0">
+                        <button id="mute">Mute</button>
+                        <input type="range" id="volume-bar" value="100">
+                        <button id="fullscreen">Fullscreen</button>
+                    </div>
+                </div>
+</div>
+            
+        </div>
+        <div class="col-span-full">
+            <h1>Interesting in collaboration with me?</h1>
+    <h3>I'm always open to discuss product design work or partnership opportunities</h3>
+    <div class="conversation">Start a conversation</div>
+        </div>
+        
+    </section>
+    <section id="testimonial">
+        <div class="col-span-full">
+            <h1>Testimonial
+
+</h1>
+    <h3>People I'vs worked with have said some nice things...</h3>
+        </div>
+        
+
+        <div class="grid-con" id="testimonialsection">
+            <div class="m-col-start-5 m-col-end-9 image">
+                <img class="face-image client-image" src="assets/venu.jpeg">
+            </div>
+            <div class="m-col-start-2 m-col-end-12 text">
+                <p>"Haem was a real pleasure to work with and we look forward to working with him again. 
+                    He's definitely the kind of designer you can trust with a project from start to finish."</p>
+
+                    <div class="client-name">Vinod Kumar
+                       
+                        </div>
+                    <div class="client-position">
+                        CEO of Pizzeria Hub
+                    </div>
+            </div>
+            
+        </div>
+        
+        
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animating sections with simple fade-in transitions
+      gsap.utils.toArray('section').forEach(section => {
+        gsap.to(section, {
+          opacity: 1,
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 100%',
+            end: 'bottom 80%',
+            scrub: true
+          }
+        });
+      });
+      
+      gsap.to('#logo img', {
+        opacity: 1,
+        duration: 1.5,
+        y: -10,
+        ease: 'power2.out',
+        delay: 0.5
+      });
+      gsap.from('.navigation-item', {
+        scrollTrigger: {
+            trigger: '#main-header',
+            start: 'top 50%',
+            toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        y: -30,
+        duration: 1,
+        stagger: 0.2,
+    });
+    
+    </script>
+    </main>
+    <footer class="full-width-grid-con">
+        <div class="col-span-full">
+            <p class="footer-title">Living, learning, &amp; leveling up<br>
+one day at a time</p>
+
+
+<h4>Linkedin</h4>
+<p>https://www.linkedin.com/feed/</p>
+
+<h4>Email</h4>
+<p>haem@gmail.com</p>
+
+
+<h3>Copyright 2023. All Right Reserved </h3>
+</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        const video = document.getElementById('myVideo');
+        const playPauseButton = document.getElementById('play-pause');
+        const seekBar = document.getElementById('seek-bar');
+        const muteButton = document.getElementById('mute');
+        const volumeBar = document.getElementById('volume-bar');
+        const fullscreenButton = document.getElementById('fullscreen');
+
+        playPauseButton.addEventListener('click', togglePlayPause);
+        seekBar.addEventListener('input', handleSeekBar);
+        muteButton.addEventListener('click', toggleMute);
+        volumeBar.addEventListener('input', handleVolume);
+        fullscreenButton.addEventListener('click', toggleFullscreen);
+
+        function togglePlayPause() {
+            if (video.paused || video.ended) {
+                video.play();
+                playPauseButton.textContent = 'Pause';
+            } else {
+                video.pause();
+                playPauseButton.textContent = 'Play';
+            }
+        }
+
+        function handleSeekBar() {
+            const seekValue = seekBar.value;
+            const time = (seekValue * video.duration) / 100;
+            video.currentTime = time;
+        }
+
+        function toggleMute() {
+            video.muted = !video.muted;
+            muteButton.textContent = video.muted ? 'Unmute' : 'Mute';
+        }
+
+        function handleVolume() {
+            const volumeValue = volumeBar.value;
+            video.volume = volumeValue / 100;
+        }
+
+        function toggleFullscreen() {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { /* Firefox */
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { /* IE/Edge */
+                video.msRequestFullscreen();
+            }
+        }
+
+        video.addEventListener('timeupdate', updateSeekBar);
+        video.addEventListener('ended', handleVideoEnd);
+
+        function updateSeekBar() {
+            const value = (video.currentTime / video.duration) * 100;
+            seekBar.value = value;
+        }
+
+        function handleVideoEnd() {
+            playPauseButton.textContent = 'Replay';
+        }
+    </script>
+    
+
+</body></html>

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'cantarellregular', helvetica, arial;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/cantarell_regular-webfont.woff") format("ttf"), url("../fonts/cantarell_regular-webfont.woff2") format("woff");
+}
+
+body {
+    font-family: 'cantarellregular', helvetica, arial;
+}
+
+p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.box { 
+    background: #cfcfcf;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #a2a2a2;
+    margin-top: 20px;
+    text-align: center;
+
+    .heading {
+        margin-top: 70px;
+    }
+}
+
+#herosection {
+    height: 500px;
+}
+
+#aboutme {
+    height: 400px;
+}
+
+#services {
+    min-height: 300px;
+
+    .servicecard {
+        height: 300px;
+    }
+}
+
+#work {
+    margin-top: 30px;
+
+    .workcard {
+        height: 200px;
+    }
+}
+
+#product-image {
+    div {
+        height: 150px;
+    }
+}
+
+#contactherosection {
+    .image {
+        height: 100px;
+    }
+
+    .text {
+        height: 200px;
+    }
+
+    .contactform {
+        height: 350px;
+    }
+
+    .contactme {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        margin-top: 20px;
+    }
+}

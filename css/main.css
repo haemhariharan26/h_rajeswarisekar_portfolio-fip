@@ -1,0 +1,756 @@
+header#main-header {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+div#logo {
+  width: 100px;
+}
+
+.navigation-item {
+  font-size: 20px;
+  color: #7F3F98;
+  font-weight: 600;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+ .navigation-item:hover {
+    transform: scale(1.1);
+} 
+.m-col-start-1{
+cursor: pointer;	
+}
+
+.navigation-button {
+  color: #7F3F98;
+  border: 3px solid #7F3F98;
+  padding: 14px 0px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+  /* Add a hover effect */
+        .navigation-button:hover {
+			color: #FFFFFF;
+            background-color: #7F3F98;
+            /* Add any other styles you want for the hover state */
+        }
+
+h1 {
+  font-size: 45px;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 400;
+  text-align: center;
+}
+
+#herosection {
+  text-align: center;
+  margin-top: 60px;
+  height: 700px;
+}
+#herosection .face-image {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+#herosection .landing-image {
+  width: 700px;
+}
+#herosection .col-span-full {
+  z-index: 50 !important;
+}
+
+#aboutme {
+  height: 400px;
+  z-index: 3;
+  background: #7F3F98;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+
+#work {
+  padding: 50px 0px;
+  background: #f1f1f1;
+  margin-top: 0;
+}
+#work .workcard {
+  height: auto;
+  margin: 15px;
+  box-shadow: 0px 5px 17px 10px rgba(0, 0, 0, 0.1);
+}
+#work .workcard:hover {
+  box-shadow: 0px 0px 21px 13px rgba(0, 0, 0, 0.23);
+  zoom: 90%;
+}
+#work .grid-con {
+  margin-top: 35px;
+}
+#work img.face-image {
+  border-radius: 50%;
+}
+#work img.face-image.client-image {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+#work .client-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+#work .client-position {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer {
+  background: #7F3F98;
+  text-align: center;
+  color: white;
+  padding: 35px;
+}
+footer h3, footer h4, footer p {
+  text-align: center;
+  color: white;
+}
+
+#testimonialsection {
+  text-align: center;
+}
+#testimonialsection .conversation {
+  color: #7F3F98;
+  border: 1px solid #7F3F98;
+  border-radius: 31px;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+section#reel {
+  padding: 30px 0;
+}
+section#reel .col-span-full {
+  padding: 20px;
+}
+
+#testimonialsection .text {
+  margin: 20px;
+}
+
+footer .footer-title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+footer h4 {
+  margin-top: 30px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+footer h3 {
+  margin-top: 20px;
+}
+
+.footer-copyright {
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+section#testimonial {
+  background: #f1f1f1;
+  padding: 50px 0;
+}
+
+.card {
+  padding: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+@font-face {
+  font-family: "cantarellregular", helvetica, arial;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/cantarell_regular-webfont.woff") format("ttf"), url("../fonts/cantarell_regular-webfont.woff2") format("woff");
+}
+body {
+  font-family: "cantarellregular", helvetica, arial;
+}
+
+p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.box {
+  background: #cfcfcf;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #a2a2a2;
+  margin-top: 20px;
+  text-align: center;
+}
+.box .heading {
+  margin-top: 70px;
+}
+
+#herosection {
+  height: 500px;
+}
+
+#aboutme {
+  height: 400px;
+}
+
+#services {
+  min-height: 300px;
+}
+#services .servicecard {
+  height: 300px;
+}
+
+#work {
+  margin-top: 30px;
+}
+#work .workcard {
+  height: 200px;
+}
+
+#product-image div {
+  height: 150px;
+}
+
+#contactherosection .image {
+  height: 100px;
+}
+#contactherosection .text {
+  height: 200px;
+}
+#contactherosection .contactform {
+  height: 350px;
+}
+#contactherosection .contactme {
+  height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    margin-top: 20px;
+  }
+}
+
+h1{
+  font-size:45px;
+  padding:10px;
+  text-align:center;
+}
+h3{
+font-size:25px;
+  padding:10px;
+  width: 70%;
+  margin:0 auto;
+  font-weight: 400;
+  text-align:center;
+}
+#herosection {
+   text-align: center;
+   margin-top:60px;
+   height: 700px;
+}
+
+#herosection .face-image{
+  width:150px;
+  display: block;
+  margin: 0 auto;
+}
+#herosection .landing-image{
+  width: 700px;
+}
+#herosection .col-span-full{
+  z-index: 50 !important;
+}
+
+
+#aboutme {
+   height: 400px;
+   z-index: 3;
+   background: #7F3F98;
+   text-align: center;
+   color: white;
+  padding-top:100px;
+}
+#work {
+   padding: 50px 0px;
+   background: #f1f1f1;
+   margin-top: 0;
+}
+#work .workcard {
+   height: auto;
+   margin: 15px;
+   box-shadow: 0px 5px 17px 10px rgba(0,0,0,0.1);
+}
+#work .workcard:hover{
+  box-shadow: 0px 0px 21px 13px rgb(0 0 0 / 23%);
+  zoom: 90%;
+}
+
+section#work .grid-con {
+   margin-top: 35px;
+}
+img.face-image {
+   border-radius: 50%;
+}
+
+img.face-image.client-image {
+   width: 200px;
+   display: block;
+   margin: 0 auto;
+}
+
+.client-name {
+   font-size: 20px;
+   font-weight: 600;
+   margin: 10px 0;
+}
+
+.client-position {
+   font-size: 18px;
+   font-weight: 500;
+}
+footer {
+   background: #7F3F98;
+   text-align: center;
+   color: white;
+   padding: 35px;
+}
+footer h3, footer h4, footer p{
+   text-align: center;
+   color: white;
+}
+
+
+.m-col-start-2.m-col-end-12.text {}
+
+#testimonialsection {
+   text-align: center;
+}
+
+.conversation {
+   color: #7F3F98;
+   border: 1px solid #7F3F98;
+   border-radius: 31px;
+   width: 250px;
+   text-align: center;
+   margin: 0 auto;
+   font-size: 18px;
+   padding: 10px;
+   margin-top: 15px;
+}
+
+section#reel {
+   padding: 30px 0;
+}
+
+section#reel .col-span-full {
+   padding: 20px;
+}
+
+#testimonialsection .text {margin: 20px;}
+
+footer .footer-title {
+   font-size: 25px;
+   line-height: 30px;
+}
+
+footer h4 {
+   margin-top: 30px;
+   margin-bottom: 4px;
+   font-weight: 700;
+}
+
+footer h3 {
+   margin-top: 20px;
+}
+
+.footer-copyright {
+   font-size: 22px;
+   margin-top: 40px;
+}
+
+p.footer-copyright {}
+
+section#testimonial {
+   background: #f1f1f1;
+   padding: 50px 0;
+}
+h1{
+  font-size:45px;
+  padding:10px;
+  text-align:center;
+}
+h3{
+font-size:25px;
+  padding:10px;
+  width: 70%;
+  margin:0 auto;
+  font-weight: 400;
+  text-align:center;
+}
+#herosection {
+   text-align: center;
+   margin-top:60px;
+   height: 700px;
+}
+
+#herosection .face-image{
+  width:150px;
+  display: block;
+  margin: 0 auto;
+}
+#herosection .landing-image{
+  width: 700px;
+}
+#herosection .col-span-full{
+  z-index: 50 !important;
+}
+
+
+#aboutme {
+   height: 400px;
+   z-index: 3;
+   background: #7F3F98;
+   text-align: center;
+   color: white;
+  padding-top:100px;
+}
+#work {
+   padding: 50px 0px;
+   background: #f1f1f1;
+   margin-top: 0;
+}
+#work .workcard {
+   height: auto;
+   margin: 15px;
+   box-shadow: 0px 5px 17px 10px rgba(0,0,0,0.1);
+}
+#work .workcard:hover{
+  box-shadow: 0px 0px 21px 13px rgb(0 0 0 / 23%);
+  zoom: 90%;
+}
+
+section#work .grid-con {
+   margin-top: 35px;
+}
+img.face-image {
+   border-radius: 50%;
+}
+
+img.face-image.client-image {
+   width: 200px;
+   display: block;
+   margin: 0 auto;
+}
+
+.client-name {
+   font-size: 20px;
+   font-weight: 600;
+   margin: 10px 0;
+}
+
+.client-position {
+   font-size: 18px;
+   font-weight: 500;
+}
+footer {
+   background: #7F3F98;
+   text-align: center;
+   color: white;
+   padding: 35px;
+}
+footer h3, footer h4, footer p{
+   text-align: center;
+   color: white;
+}
+
+
+.m-col-start-2.m-col-end-12.text {}
+
+#testimonialsection {
+   text-align: center;
+}
+
+.conversation {
+   color: #7F3F98;
+   border: 1px solid #7F3F98;
+   border-radius: 31px;
+   width: 250px;
+   text-align: center;
+   margin: 0 auto;
+   font-size: 18px;
+   padding: 10px;
+   margin-top: 15px;
+}
+
+section#reel {
+   padding: 30px 0;
+}
+
+section#reel .col-span-full {
+   padding: 20px;
+}
+
+#testimonialsection .text {margin: 20px;}
+
+footer .footer-title {
+   font-size: 25px;
+   line-height: 30px;
+}
+
+footer h4 {
+   margin-top: 30px;
+   margin-bottom: 4px;
+   font-weight: 700;
+}
+
+footer h3 {
+   margin-top: 20px;
+}
+
+.footer-copyright {
+   font-size: 22px;
+   margin-top: 40px;
+}
+
+p.footer-copyright {}
+
+section#testimonial {
+   background: #f1f1f1;
+   padding: 50px 0;
+}
+div#custom-controls button {
+   border-radius: 31px;
+   width: 100px;
+   text-align: center;
+   margin: 0 auto;
+   font-size: 15px;
+   padding: 3px;
+   margin-top: 14px;
+}
+img.face-image {
+   border-radius: 50%;
+   width: 115px;
+}
+
+section#contactsection {
+   text-align: center;
+   margin-top: 60px;
+}
+
+section#contact h1 {
+   color: #727272;
+}
+
+.contactme h3, .contactme p {
+   text-align: left !important;
+}
+
+.contactme div {
+margin:30px 0px;
+}
+.contactme h4 {
+font-size:20px;
+}
+
+section#contactsection {
+   text-align: center;
+   margin-top: 60px;
+}
+
+section#contact h1 {
+   color: #727272;
+}
+
+.contactme h3, .contactme p {
+   text-align: left !important;
+}
+
+.contactme div {
+margin:30px 0px;
+}
+.contactme h4 {font-size:20px;font-weight: 500;}
+.contactme p{font-size:15px;font-weight: 500;color: #646464;}
+
+section#contact {
+   margin-bottom: 50px;
+}
+
+.form-container {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+}
+
+label {
+ margin-bottom: 8px;
+}
+
+input,
+textarea {
+ margin-bottom: 16px;
+ padding: 8px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+}
+
+input[type="submit"] {
+ background-color: #4caf50;
+ color: white;
+ cursor: pointer;
+}
+
+input[type="submit"]:hover {
+ background-color: #45a049;
+}
+section#gallerysection {
+  text-align: center;
+  margin-top: 60px;
+}
+
+section#image-gallery {
+  margin-bottom: 50px;
+}
+img.mygalleryimg {
+  margin: 15px 0px;
+}
+/* Add your existing styles here */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.lightbox-content {
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+#video-tabs div {
+  background: white;
+  border: 1px solid;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+section#video-tabs {
+  margin-bottom: 50px;
+}
+
+#video-tabs div:hover {
+  background: #d2d2d2;
+  padding: 51px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+body.fadeOut {
+    animation: fadeOutAnimation 1s ease forwards;
+}
+
+@keyframes fadeOutAnimation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.face-image,
+.landing-image {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Add your styles here */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mygalleryimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Add your animation styles */
+.mygalleryimg:hover {
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

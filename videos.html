@@ -1,0 +1,213 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Haem Hariharan Project</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+</head>
+
+<body>
+    <h1 class="hidden">Haem Hariharan Project</h1>
+    <header id="main-header" class="grid-con">
+        <div class="m-col-start-1 m-col-end-3 col-span-2">
+            <div id="logo" onclick="openIndex()">
+                <img src="assets/Logo/logo.png">
+            </div>
+        </div>
+        <div class="navigation-item m-col-start-5 m-col-end-7 col-span-2">
+            <div id="3d" onclick="openVideos()">3d Video</div>
+        </div>
+        <div class="navigation-item m-col-start-8 m-col-end-10 col-span-2">
+            <div id="grapics"  onclick="openGrapics()" href="gallery.html">Graphic Design</div>
+        </div>
+        <div class="navigation-button m-col-start-11 m-col-end-13 col-span-2" onclick="openContact()">
+            <div id="sayhello"  >  Say Hello  </div>
+			
+        </div>
+     </header>
+    <main>
+    
+        <section class="grid-con" id="videosection">
+                      <div class="col-span-full">
+              
+                          <h1>3d Animation Demereel</h1>
+                        
+                          
+                          
+                      </div>
+                    <div class="m-col-start-1 m-col-end-13 videoplayer">
+                        <div id="player-container">
+                            <video id="myVideo" poster="assets/demoreel-video/video.jpg" controls="">
+                                <source src="assets/demoreel-video/product-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                    
+                            <div id="custom-controls">
+                                <button id="play-pause">Play</button>
+                                <input type="range" id="seek-bar" value="0">
+                                <button id="mute">Mute</button>
+                                <input type="range" id="volume-bar" value="100">
+                                <button id="fullscreen">Fullscreen</button>
+                            </div>
+                        </div>
+        </div>
+        </section>
+        <section id="video-tabs" class="grid-con">
+          
+        
+            <div class="m-col-start-1 m-col-end-5" id="beer-video">Beer Video</div>
+            <div class="m-col-start-5 m-col-end-9" id="make-up-video">Make Up Project</div>
+            <div class="m-col-start-9 m-col-end-13" id="earbud-project">Earbud Project</div>
+        
+        </section>
+                    
+                
+        
+            
+              </main>
+    <footer class="full-width-grid-con">
+        <div class="col-span-full">
+            <p class="footer-title">Living, learning, &amp; leveling up<br>
+one day at a time</p>
+
+
+<h4>Linkedin</h4>
+<p>https://www.linkedin.com/feed/</p>
+
+<h4>Email</h4>
+<p>haem@gmail.com</p>
+
+
+<h3>Copyright 2023. All Right Reserved </h3>
+</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        const video = document.getElementById('myVideo');
+        const playPauseButton = document.getElementById('play-pause');
+        const seekBar = document.getElementById('seek-bar');
+        const muteButton = document.getElementById('mute');
+        const volumeBar = document.getElementById('volume-bar');
+        const fullscreenButton = document.getElementById('fullscreen');
+    
+        playPauseButton.addEventListener('click', togglePlayPause);
+        seekBar.addEventListener('input', handleSeekBar);
+        muteButton.addEventListener('click', toggleMute);
+        volumeBar.addEventListener('input', handleVolume);
+        fullscreenButton.addEventListener('click', toggleFullscreen);
+    
+        function togglePlayPause() {
+            if (video.paused || video.ended) {
+                video.play();
+                playPauseButton.textContent = 'Pause';
+            } else {
+                video.pause();
+                playPauseButton.textContent = 'Play';
+            }
+        }
+    
+        function handleSeekBar() {
+            const seekValue = seekBar.value;
+            const time = (seekValue * video.duration) / 100;
+            video.currentTime = time;
+        }
+    
+        function toggleMute() {
+            video.muted = !video.muted;
+            muteButton.textContent = video.muted ? 'Unmute' : 'Mute';
+        }
+    
+        function handleVolume() {
+            const volumeValue = volumeBar.value;
+            video.volume = volumeValue / 100;
+        }
+    
+        function toggleFullscreen() {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { /* Firefox */
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { /* IE/Edge */
+                video.msRequestFullscreen();
+            }
+        }
+    
+        video.addEventListener('timeupdate', updateSeekBar);
+        video.addEventListener('ended', handleVideoEnd);
+    
+        function updateSeekBar() {
+            const value = (video.currentTime / video.duration) * 100;
+            seekBar.value = value;
+        }
+    
+        function handleVideoEnd() {
+            playPauseButton.textContent = 'Replay';
+        }
+    
+        // Handle clicks on video tabs
+        document.getElementById('beer-video').addEventListener('click', function() {
+            updateVideo('assets/demoreel-video/product-video.mp4', 'assets/demoreel-video/video.jpg');
+        });
+    
+        document.getElementById('make-up-video').addEventListener('click', function() {
+            updateVideo('assets/demoreel-video/product-video.mp4', 'assets/demoreel-video/video.jpg');
+        });
+    
+        document.getElementById('earbud-project').addEventListener('click', function() {
+            updateVideo('assets/demoreel-video/product-video.mp4', 'assets/demoreel-video/video.jpg');
+        });
+    
+        // Function to update video source and poster
+        function updateVideo(videoSrc, posterSrc) {
+            video.src = videoSrc;
+            video.poster = posterSrc;
+            video.load(); // Load the new video
+            video.play(); // Auto-play the new video
+        }
+    </script>
+     <script>
+        // Animation on page load
+        gsap.from('#main-header, section', { opacity: 0, duration: 1, stagger: 0.2 });
+    </script>
+    <script>
+        gsap.utils.toArray('#videosection, #video-tabs').forEach((section, index) => {
+            gsap.from(section, {
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 80%',
+                    toggleActions: 'play none none none',
+                },
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                delay: index * 0.2,
+            });
+        });
+        gsap.from('.navigation-item', {
+        scrollTrigger: {
+            trigger: '#main-header',
+            start: 'top 50%',
+            toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        y: -30,
+        duration: 1,
+        stagger: 0.2,
+    });
+    gsap.to('#logo img', {
+        opacity: 1,
+        duration: 1.5,
+        y: -10,
+        ease: 'power2.out',
+        delay: 0.5
+      });
+    </script>
+    
+
+</body></html>
