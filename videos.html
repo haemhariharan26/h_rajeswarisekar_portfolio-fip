@@ -6,8 +6,8 @@
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    
-
+     
+ 
 </head>
 
 <body>
@@ -46,22 +46,46 @@
                                 Your browser does not support the video tag.
                             </video>
                     
-                            <div id="custom-controls">
+                            <!-- <div id="custom-controls">
                                 <button id="play-pause">Play</button>
                                 <input type="range" id="seek-bar" value="0">
                                 <button id="mute">Mute</button>
                                 <input type="range" id="volume-bar" value="100">
                                 <button id="fullscreen">Fullscreen</button>
-                            </div>
+                            </div> -->
                         </div>
         </div>
         </section>
         <section id="video-tabs" class="grid-con">
           
-        
-            <div class="m-col-start-1 m-col-end-5" id="beer-video">Beer Video</div>
-            <div class="m-col-start-5 m-col-end-9" id="make-up-video">Make Up Project</div>
-            <div class="m-col-start-9 m-col-end-13" id="earbud-project">Earbud Project</div>
+    
+            <div  class="m-col-start-1 m-col-end-5" id="beer-video"> 
+               <img src="images/video-image-1.jpg"/>
+            </div>
+            <div class="m-col-start-5 m-col-end-9" id="hair-loop-animation" >
+                <img class="mygalleryimg"src="images/video-image-2.jpg"/>
+            </div>
+            <div class="m-col-start-9 m-col-end-13" id="make-up-video">
+                <img src="images/video-image-3.jpg"/>
+            </div>
+
+            <div  class="m-col-start-1 m-col-end-5" id="sports-motion-graphic"> 
+                <img src="images/video-image-4.jpg"/>
+             </div>
+             <div class="m-col-start-5 m-col-end-9" id="video">
+                 <img src="images/video-image-5.jpg"/>
+             </div>
+             <div class="m-col-start-9 m-col-end-13" id="hair-loop-animation1">
+                 <img src="images/video-image-6.jpg"/>
+             </div>
+             <div  class="m-col-start-1 m-col-end-5" id="RING-ANIMATION"> 
+                <img src="images/video-image-7.jpg"/>
+             </div>
+             <div class="m-col-start-5 m-col-end-9" id="text-animation">
+                 <img src="images/video-image-8.jpg"/>
+             </div>
+              
+             </div>
         
         </section>
                     
@@ -89,25 +113,25 @@ one day at a time</p>
     <script src="js/main.js"></script>
     <script>
         const video = document.getElementById('myVideo');
-        const playPauseButton = document.getElementById('play-pause');
-        const seekBar = document.getElementById('seek-bar');
-        const muteButton = document.getElementById('mute');
-        const volumeBar = document.getElementById('volume-bar');
-        const fullscreenButton = document.getElementById('fullscreen');
+       // const playPauseButton = document.getElementById('play-pause');
+        // const seekBar = document.getElementById('seek-bar');
+        // const muteButton = document.getElementById('mute');
+        // const volumeBar = document.getElementById('volume-bar');
+        // const fullscreenButton = document.getElementById('fullscreen');
     
-        playPauseButton.addEventListener('click', togglePlayPause);
-        seekBar.addEventListener('input', handleSeekBar);
-        muteButton.addEventListener('click', toggleMute);
-        volumeBar.addEventListener('input', handleVolume);
-        fullscreenButton.addEventListener('click', toggleFullscreen);
+      //  playPauseButton.addEventListener('click', togglePlayPause);
+        // seekBar.addEventListener('input', handleSeekBar);
+        // muteButton.addEventListener('click', toggleMute);
+        // volumeBar.addEventListener('input', handleVolume);
+        // fullscreenButton.addEventListener('click', toggleFullscreen);
     
         function togglePlayPause() {
             if (video.paused || video.ended) {
                 video.play();
-                playPauseButton.textContent = 'Pause';
+                // playPauseButton.textContent = 'Pause';
             } else {
                 video.pause();
-                playPauseButton.textContent = 'Play';
+                // playPauseButton.textContent = 'Play';
             }
         }
     
@@ -156,12 +180,26 @@ one day at a time</p>
             updateVideo('assets/demoreel-video/demoreel-final.mp4', 'assets/demoreel-video/video.jpg');
         });
     
+        document.getElementById('hair-loop-animation').addEventListener('click', function() {
+            updateVideo('video/hair-loop-animation.mp4', 'assets/demoreel-video/video.jpg');
+        });
         document.getElementById('make-up-video').addEventListener('click', function() {
             updateVideo('assets/demoreel-video/makeup-video.mp4', 'assets/demoreel-video/video.jpg');
         });
+
+        
     
-        document.getElementById('earbud-project').addEventListener('click', function() {
-            updateVideo('assets/demoreel-video/product-video.mp4', 'assets/demoreel-video/video.jpg');
+        document.getElementById('sports-motion-graphic').addEventListener('click', function() {
+            updateVideo('video/sports-motion-graphic.mp4', 'assets/demoreel-video/video.jpg');
+        });
+        document.getElementById('hair-loop-animation1').addEventListener('click', function() {
+            updateVideo('video/hair-loop-animation.mp4', 'assets/demoreel-video/video.jpg');
+        });
+        document.getElementById('RING-ANIMATION').addEventListener('click', function() {
+            updateVideo('video/RING-ANIMATION.mp4', 'assets/demoreel-video/video.jpg');
+        });
+        document.getElementById('text-animation').addEventListener('click', function() {
+            updateVideo('video/text-animation.mp4', 'assets/demoreel-video/video.jpg');
         });
     
         // Function to update video source and poster

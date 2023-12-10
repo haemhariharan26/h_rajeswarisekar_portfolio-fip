@@ -17,6 +17,27 @@
 	   opacity: 0;
     animation: fadeInAnimation 1s ease forwards;
     }
+/* Add this CSS for the hamburger menu */
+.hamburger-menu {
+    cursor: pointer;
+    display: none; /* Hide by default on larger screens */
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Show on smaller screens */
+    }
+
+    /* Add styles for the mobile menu */
+    .grid-con {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .navigation-item, .navigation-button {
+        display: none; /* Hide other navigation items */
+    }
+}
 
 
       </style>
@@ -38,11 +59,9 @@
             <div id="grapics"  onclick="openGrapics()" href="gallery.html">Graphic Design</div>
         </div>
         <div class="navigation-button m-col-start-11 m-col-end-13 col-span-2" onclick="openContact()">
-            <div id="sayhello"  >  Say Hello  </div>
-			
+            <div id="sayhello" class="hamburger-menu">☰ Say Hello</div>
         </div>
-        
-     </header>
+    </header>
     <main>
     
     <section class="grid-con" id="herosection">
@@ -75,20 +94,20 @@
 
 
 <div class="grid-con">
-            <div  onclick="openMyWork1()" class="col-span-full m-col-start-2 m-col-end-7 workcard">
+            <div  onclick="openMyWork1()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Bayengage">
 <img src="assets/home-project-image/Bayengage-Project.jpg">
 </div>
-            <div  onclick="openMyWork2()" class="col-span-full m-col-start-7 m-col-end-12 workcard">
+            <div  onclick="openMyWork2()" class="col-span-full m-col-start-7 m-col-end-12 workcard" title="Dr.Nut Beer">
 <img src="assets/home-project-image/Cybernexa-Project.jpg">
 </div>
         </div>
 		<div class="grid-con">
            
-		   <div  onclick="openMyWork3()" class="col-span-full m-col-start-2 m-col-end-7 workcard">
+		   <div  onclick="openMyWork3()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Kavorca">
 <img src="assets/home-project-image/GingaFleets-project.jpg">
 </div>
 
-            <div   onclick="openMyWork4()" class="col-span-full m-col-start-7 m-col-end-12 workcard">
+            <div   onclick="openMyWork4()" class="col-span-full m-col-start-7 m-col-end-12 workcard" title="Earbud">
 <img src="assets/home-project-image/Earbud-project.jpg">
 </div>
         </div>
@@ -282,6 +301,19 @@ one day at a time</p>
         function handleVideoEnd() {
             playPauseButton.textContent = 'Replay';
         }
+        
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navigationItems = document.querySelectorAll('.navigation-item, .navigation-button');
+    
+            hamburgerMenu.addEventListener('click', function () {
+                navigationItems.forEach(item => {
+                    item.style.display = (item.style.display === 'none' || item.style.display === '') ? 'block' : 'none';
+                });
+            });
+        });
     </script>
     
 

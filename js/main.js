@@ -41,7 +41,7 @@ function openVideos()
 }
 function openMyWork1()
 {
-	var url = 'mywork1.html';
+	var url = 'Bayengage.html';
    
         document.body.classList.add('fadeOut');
 
@@ -52,7 +52,7 @@ function openMyWork1()
 }
 function openMyWork2()
 {
-	var url = 'mywork2.html';
+	var url = 'Dr.Nut Beer.html';
    
         document.body.classList.add('fadeOut');
 
@@ -63,7 +63,7 @@ function openMyWork2()
 }
 function openMyWork3()
 {
-	var url = 'mywork3.html';
+	var url = 'Kavorca.html';
    
         document.body.classList.add('fadeOut');
 
@@ -74,7 +74,7 @@ function openMyWork3()
 }
 function openMyWork4()
 {
-	var url = 'mywork4.html';
+	var url = 'Earbud.html';
    
         document.body.classList.add('fadeOut');
 
