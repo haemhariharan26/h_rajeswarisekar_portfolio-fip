@@ -178,4 +178,32 @@ h1 {
     background: #f1f1f1;
     padding: 50px 0;
   }
+  #custom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+  
+    button, input {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  
+    input[type="range"] {
+      width: 100px;
+    }
+  
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
   

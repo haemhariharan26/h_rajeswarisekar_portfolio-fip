@@ -63,7 +63,7 @@ function openMyWork2()
 }
 function openMyWork3()
 {
-	var url = 'videos.html';
+	var url = 'mywork3.html';
    
         document.body.classList.add('fadeOut');
 
