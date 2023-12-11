@@ -83,5 +83,33 @@ function openMyWork4()
         }, 200);
 	
 }
-
-
+ 
+window.onload = function() {
+         
+    
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from('#herosection', {
+                opacity: 0,  
+                y: 100, 
+                duration: 1.5,
+                ease: 'power2.out',  
+                scrollTrigger: {
+                  trigger: '#herosection',
+                  start: 'top 100%',
+                  end: 'bottom 80%',
+                  scrub: true
+                }
+              });
+            
+              
+              gsap.from('#logo img', {
+                opacity: 0,
+                duration: 1.5,
+                y: -50,
+                ease: 'power2.out',
+                delay: 0.5
+              });
+            
+        
+    };
+    
