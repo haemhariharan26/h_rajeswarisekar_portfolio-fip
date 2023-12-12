@@ -348,7 +348,20 @@ footer h3, footer h4, footer p{
 }
 
 
-.m-col-start-2.m-col-end-12.text {}
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+ 
 
 #testimonialsection {
    text-align: center;
@@ -491,8 +504,7 @@ footer h3, footer h4, footer p{
    color: white;
 }
 
-
-.m-col-start-2.m-col-end-12.text {}
+ 
 
 #testimonialsection {
    text-align: center;
@@ -540,7 +552,7 @@ footer h3 {
    margin-top: 40px;
 }
 
-p.footer-copyright {}
+ 
 
 section#testimonial {
    background: #f1f1f1;
@@ -768,6 +780,50 @@ body.fadeOut {
   max-width: 100%;
   max-height: 100%;
 }
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
 
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-item,
+.navigation-button {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  /* Styles for mobile view */
+  .navigation {
+      display: none;
+      flex-direction: column;
+  }
+  
+  
+
+  #hamburger {
+      display: block;
+  }
+  
+  .show-menu .navigation {
+    display: flex; /* Ensure navigation items are visible when menu is toggled */
+}
+
+  .navigation .show-menu {
+      display: flex;
+  }
+
+  
+}
 

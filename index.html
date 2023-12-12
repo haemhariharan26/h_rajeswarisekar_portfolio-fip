@@ -10,47 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/main.js"></script>
 
-    <style>
-        
-        
-        section {
-          opacity: 0;
-          transition: opacity 0.2s ease-in-out;
-        }
-        #logo img {
-      opacity: 0;
-	   opacity: 0;
-    animation: fadeInAnimation 1s ease forwards;
-    }
- 
-        .hamburger-menu {
-            cursor: pointer;
-            display: none;  
-        }
-
-        .navigation-item,
-        .navigation-button {
-            display: block;  
-        }
-
-        /* Media query for mobile view */
-        @media screen and (max-width: 768px) {
-            .hamburger-menu {
-                display: block;  
-            }
-
-         
-            .grid-con {
-                grid-template-columns: 1fr;  
-            }
-
-            .navigation-item,
-            .navigation-button {
-                display: block;  
-            }
-        }
-
-      </style>
+    
 	
 </head>
 
@@ -59,27 +19,40 @@
     <header id="main-header" class="grid-con">
         <div class="m-col-start-1 m-col-end-3 col-span-2">
             <div id="logo" onclick="openIndex()">
-                <img src="assets/Logo/logo.png">
+                <img src="images/Logo/logo.png" alt="Logo">
             </div>
         </div>
+    
         <div class="navigation-item m-col-start-5 m-col-end-7 col-span-2">
-            <div id="3d" onclick="openVideos()">3d Video</div>
+            <div id="3d" onclick="openVideos()">3D Video</div>
         </div>
         <div class="navigation-item m-col-start-8 m-col-end-10 col-span-2">
-            <div id="grapics"  onclick="openGrapics()" href="gallery.html">Graphic Design</div>
+            <div id="graphics" onclick="openGraphics()">Graphic Design</div>
         </div>
         <div class="navigation-button m-col-start-11 m-col-end-13 col-span-2" onclick="openContact()">
-            <div id="sayhello" class="hamburger-menu">☰ Say Hello</div>
+            <div id="sayhello">Say Hello</div>
+        </div>
+        <div class="navigation " id="navigation">
+            
+        </div>
+        
+    
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     </header>
+    
+    
     <main>
     
     <section class="grid-con" id="herosection">
             <div class="col-span-full" >
                 <h1>Designer, Frontend Developer &amp; Mentor</h1>
                 <h3>I Design and code beatifully simple things, and I love what I do.</h3>
-                <img class="face-image" src="assets/face.png">
-                <img class="landing-image" src="assets/landing image.png">
+                <img class="face-image" src="images/face.png">
+                <img class="landing-image" src="images/landing image.png">
             </div>
     </section>
 
@@ -104,20 +77,20 @@
 
 <div class="grid-con">
             <div  onclick="openMyWork1()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Bayengage">
-<img src="assets/home-project-image/Bayengage-Project.jpg">
+<img src="images/Bayengage/BayengageProject-image.jpg">
 </div>
             <div  onclick="openMyWork2()" class="col-span-full m-col-start-7 m-col-end-12 workcard" title="Dr.Nut Beer">
-<img src="assets/home-project-image/Cybernexa-Project.jpg">
+<img src="images/beer website/100-proof.jpeg">
 </div>
         </div>
 		<div class="grid-con">
            
 		   <div  onclick="openMyWork3()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Kavorca">
-<img src="assets/home-project-image/GingaFleets-project.jpg">
+<img src="images/kavorca-makeup/facebook-imagery.jpg">
 </div>
 
             <div   onclick="openMyWork4()" class="col-span-full m-col-start-7 m-col-end-12 workcard" title="Earbud">
-<img src="assets/home-project-image/Earbud-project.jpg">
+<img src="images/Earbuds/promotional-IMAGE3.jpg">
 </div>
         </div>
         
@@ -135,20 +108,20 @@
 <div class="grid-con">
             <div class="m-col-start-2 m-col-end-12 videoplayer">
                 <div id="player-container">
-                    <video id="myVideo" poster="assets/demoreel-video/video.jpg" controls>
-                        <!-- <source src="assets/demoreel-video/product-video.mp4" type="video/mp4"> -->
-                        <source src="assets/demoreel-video/demoreel.mp4" type="video/mp4"> 
+                    <video id="myVideo" poster="" controls>
+                        <!-- <source src="images/demoreel-video/product-video.mp4" type="video/mp4"> -->
+                        <source src="video/demoreel-final.mp4" type="video/mp4"> 
                         
                         Your browser does not support the video tag.
                     </video>
             
-                    <div id="custom-controls">
+                    <!-- <div id="custom-controls">
                         <button id="play-pause">Play</button>
                         <input type="range" id="seek-bar" value="0">
                         <button id="mute">Mute</button>
                         <input type="range" id="volume-bar" value="100">
                         <button id="fullscreen">Fullscreen</button>
-                    </div>
+                    </div> -->
                 </div>
 </div>
             
@@ -171,7 +144,7 @@
 
         <div class="grid-con" id="testimonialsection">
             <div class="m-col-start-5 m-col-end-9 image">
-                <img class="face-image client-image" src="assets/venu.jpeg">
+                <img class="face-image client-image" src="images/venu.jpeg">
             </div>
             <div class="m-col-start-2 m-col-end-12 text">
                 <p>"Haem was a real pleasure to work with and we look forward to working with him again. 
@@ -194,16 +167,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script>
       gsap.registerPlugin(ScrollTrigger);
-      gsap.from('logo', {
-  opacity: 0,
-  duration: 1,
-  scrollTrigger: {
-    trigger: '#beer-video',
-    start: 'top 80%',  
-    end: 'bottom 80%',  
-    scrub: true,
-  },
-});
+     
       
       gsap.utils.toArray('section').forEach(section => {
         gsap.to(section, {
@@ -217,24 +181,7 @@
         });
       });
       
-      gsap.to('#logo img', {
-        opacity: 1,
-        duration: 1.5,
-        y: -10,
-        ease: 'power2.out',
-        delay: 0.5
-      });
-      gsap.from('.navigation-item', {
-        scrollTrigger: {
-            trigger: '#main-header',
-            start: 'top 50%',
-            toggleActions: 'play none none none',
-        },
-        opacity: 0,
-        y: -30,
-        duration: 1,
-        stagger: 0.2,
-    });
+     
     
     </script>
     </main>
@@ -264,11 +211,11 @@ one day at a time</p>
         const volumeBar = document.getElementById('volume-bar');
         const fullscreenButton = document.getElementById('fullscreen');
 
-        playPauseButton.addEventListener('click', togglePlayPause);
-        seekBar.addEventListener('input', handleSeekBar);
-        muteButton.addEventListener('click', toggleMute);
-        volumeBar.addEventListener('input', handleVolume);
-        fullscreenButton.addEventListener('click', toggleFullscreen);
+        // playPauseButton.addEventListener('click', togglePlayPause);
+        // seekBar.addEventListener('input', handleSeekBar);
+        // muteButton.addEventListener('click', toggleMute);
+        // volumeBar.addEventListener('input', handleVolume);
+        // fullscreenButton.addEventListener('click', toggleFullscreen);
 
         function togglePlayPause() {
             if (video.paused || video.ended) {
@@ -321,18 +268,7 @@ one day at a time</p>
         }
         
     </script>
-    <script>
-       document.addEventListener('DOMContentLoaded', function () {
-            const hamburgerMenu = document.querySelector('.hamburger-menu');
-            const navigationItems = document.querySelectorAll('.navigation-item, .navigation-button');
-
-            hamburgerMenu.addEventListener('click', function () {
-                navigationItems.forEach(item => {
-                    item.style.display = (item.style.display === 'none' || item.style.display === '') ? 'block' : 'none';
-                });
-            });
-        });
-    </script>
+ 
     
 
 </body></html>
