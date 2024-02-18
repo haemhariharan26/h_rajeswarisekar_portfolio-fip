@@ -1,0 +1,216 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Haem Hariharan Project</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/SplitText.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <h1 class="hidden">Haem Hariharan Project</h1>
+    <header id="main-header" class="grid-con">
+        <div class="m-col-start-1 m-col-end-3 col-span-2">
+            <div id="logo" onclick="openIndex()">
+                <img src="images/Logo/logo.png">
+            </div>
+        </div>
+        <div class="navigation-item m-col-start-5 m-col-end-7 col-span-2">
+            <div id="3d" onclick="openVideos()">3d Video</div>
+        </div>
+        <div class="navigation-item m-col-start-8 m-col-end-10 col-span-2">
+            <div id="grapics" onclick="openGrapics()" href="gallery.html">Graphic Design</div>
+        </div>
+        <div class="navigation-button m-col-start-11 m-col-end-13 col-span-2" onclick="openContact()">
+            <div id="sayhello"> Say Hello </div>
+
+        </div>
+    </header>
+    <main>
+
+        <section class="grid-con" id="gallerysection">
+            <div class="col-span-full" style="
+  ">
+
+                <h1 id="heroHeading">Graphic Design</h1>
+                <h3 id="heroSubHeading">Showcasing some of my graphic design work did for companies and creative design.
+                </h3>
+
+
+            </div>
+        </section>
+
+        <section id="image-gallery" class="grid-con">
+
+
+            <div class="m-col-start-1 m-col-end-5"><img onclick="openLightbox('img1')" id="img1" class="mygalleryimg"
+                    src="images/gallery/1.jpg"></div>
+            <div class="m-col-start-5 m-col-end-9"><img onclick="openLightbox('img2')" id="img2" class="mygalleryimg"
+                    src="images/gallery/2.jpg"></div>
+            <div class="m-col-start-9 m-col-end-13"><img onclick="openLightbox('img3')" id="img3" class="mygalleryimg"
+                    src="images/gallery/3.jpg"></div>
+
+            <div class="m-col-start-1 m-col-end-5"><img onclick="openLightbox('img4')" id="img4" class="mygalleryimg"
+                    src="images/gallery/4.jpg"></div>
+            <div class="m-col-start-5 m-col-end-9"><img onclick="openLightbox('img5')" id="img5" class="mygalleryimg"
+                    src="images/gallery/15.jpg"></div>
+            <div class="m-col-start-9 m-col-end-13"><img onclick="openLightbox('img6')" id="img6" class="mygalleryimg"
+                    src="images/gallery/6.jpg"></div>
+
+            <div class="m-col-start-1 m-col-end-5"><img onclick="openLightbox('img7')" id="img7" class="mygalleryimg"
+                    src="images/gallery/7.jpg"></div>
+            <div class="m-col-start-5 m-col-end-9"><img onclick="openLightbox('img8')" id="img8" class="mygalleryimg"
+                    src="images/gallery/8.jpg"></div>
+            <div class="m-col-start-9 m-col-end-13"><img onclick="openLightbox('img9')" id="img9" class="mygalleryimg"
+                    src="images/gallery/9.jpg"></div>
+
+            <div class="m-col-start-1 m-col-end-5"><img onclick="openLightbox('img10')" id="img10" class="mygalleryimg"
+                    src="images/gallery/10.jpg"></div>
+            <div class="m-col-start-5 m-col-end-9"><img onclick="openLightbox('img11')" id="img11" class="mygalleryimg"
+                    src="images/gallery/11.jpg"></div>
+            <div class="m-col-start-9 m-col-end-13"><img onclick="openLightbox('img12')" id="img12" class="mygalleryimg"
+                    src="images/gallery/12.jpg"></div>
+
+            <div class="m-col-start-1 m-col-end-5"><img onclick="openLightbox('img13')" id="img13" class="mygalleryimg"
+                    src="images/gallery/13.jpg"></div>
+            <div class="m-col-start-5 m-col-end-9"><img onclick="openLightbox('img14')" id="img14" class="mygalleryimg"
+                    src="images/gallery/14.jpg"></div>
+            <div class="m-col-start-9 m-col-end-13"><img onclick="openLightbox('img15')" id="img15" class="mygalleryimg"
+                    src="images/gallery/15.jpg"></div>
+
+            <div class="m-col-start-1 m-col-end-5"><img onclick="openLightbox('img16')" id="img16" class="mygalleryimg"
+                    src="images/gallery/16.jpg"></div>
+            <div class="m-col-start-5 m-col-end-9"><img onclick="openLightbox('img17')" id="img17" class="mygalleryimg"
+                    src="images/gallery/17.jpg"></div>
+            <div class="m-col-start-9 m-col-end-13"><img onclick="openLightbox('img18')" id="img18" class="mygalleryimg"
+                    src="images/gallery/18.jpg"></div>
+
+            <div class="m-col-start-1 m-col-end-5"><img onclick="openLightbox('img19')" id="img19" class="mygalleryimg"
+                    src="images/gallery/19.jpg"></div>
+            <div class="m-col-start-5 m-col-end-9"><img onclick="openLightbox('img20')" id="img20" class="mygalleryimg"
+                    src="images/gallery/20.jpg"></div>
+            <div class="m-col-start-9 m-col-end-13"><img onclick="openLightbox('img21')" id="img21" class="mygalleryimg"
+                    src="images/gallery/21.jpg"></div>
+
+            <!-- Lightbox container -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()" style="display: none;">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-content" id="lightboxImg">
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer class="full-width-grid-con">
+        <div class="col-span-full">
+            <p class="footer-title">Living, learning, &amp; leveling up<br>
+                one day at a time</p>
+
+
+            <h4>Linkedin</h4>
+            <p>https://www.linkedin.com/feed/</p>
+
+            <h4>Email</h4>
+            <p>haem@gmail.com</p>
+
+
+            <h3>Copyright 2023. All Right Reserved </h3>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Function to open the lightbox with a specific image
+        function openLightbox(imgId) {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightboxImg');
+
+            // Set the source of the lightbox image
+            lightboxImg.src = document.getElementById(imgId).src;
+
+            // Display the lightbox
+            lightbox.style.display = 'flex';
+        }
+
+        // Function to close the lightbox
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        function openLightbox(imgId) {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightboxImg');
+
+            // Set the source of the lightbox image
+            lightboxImg.src = document.getElementById(imgId).src;
+
+            // Display the lightbox with a GSAP animation
+            gsap.to(lightbox, { duration: 0.5, opacity: 1, display: 'flex' });
+        }
+
+        // Function to close the lightbox using GSAP animation
+        function closeLightbox() {
+            // Close the lightbox with a GSAP animation
+            gsap.to('#lightbox', { duration: 0.5, opacity: 0, display: 'none' });
+        }
+        gsap.to('#logo img', {
+            opacity: 1,
+            duration: 1.5,
+            y: -10,
+            ease: 'power2.out',
+            delay: 0.5
+        });
+        gsap.to('#say-hello', {
+            opacity: 1,
+            duration: 1.5,
+            y: -10,
+            ease: 'power2.out',
+            delay: 1
+        });
+        gsap.from('.grid-con', { opacity: 0, duration: 1, stagger: 0.2 });
+
+        gsap.utils.toArray('.mygalleryimg').forEach((img, index) => {
+            gsap.from(img, {
+                scrollTrigger: {
+                    trigger: img,
+                    start: 'top 80%',
+                    toggleActions: 'play none none none',
+                },
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                delay: index * 0.2,
+            });
+        });
+        gsap.from('.navigation-item', {
+            scrollTrigger: {
+                trigger: '#main-header',
+                start: 'top 50%',
+                toggleActions: 'play none none none',
+            },
+            opacity: 0,
+            y: -30,
+            duration: 1,
+            stagger: 0.2,
+        });
+    </script>
+
+</body>
+
+</html>
