@@ -236,4 +236,26 @@ gsap.from(chars2, {
         fontWeight: "bold"  
     });
     
+    gsap.to(".face-image", {
+        y: 20,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    });
+    gsap.to(".landing-image", {
+        y: 50,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "power2.inOut"
+    });
+    
+    gsap.to(".grid-con", {
+        y: 50,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "power2.inOut"
+    });
  
