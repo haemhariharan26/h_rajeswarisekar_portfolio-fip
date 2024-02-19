@@ -251,7 +251,7 @@ gsap.from(chars2, {
         ease: "power2.inOut"
     });
     
-    gsap.to(".grid-con", {
+    gsap.to(".col-span-ful", {
         y: 50,
         duration: 2,
         repeat: -1,
