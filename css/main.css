@@ -84,7 +84,7 @@ h3 {
   margin-top: 0;
 }
 #work .workcard {
-  height: auto;
+  height: 300px;
   margin: 15px;
   box-shadow: 0px 5px 17px 10px rgba(0, 0, 0, 0.1);
 }
@@ -304,7 +304,7 @@ font-size:25px;
    margin-top: 0;
 }
 #work .workcard {
-   height: auto;
+   height: 300px;
    margin: 15px;
    box-shadow: 0px 5px 17px 10px rgba(0,0,0,0.1);
 }
@@ -461,8 +461,9 @@ font-size:25px;
    margin-top: 0;
 }
 #work .workcard {
-   height: auto;
-   margin: 15px;
+   
+   height: 350px;
+   margin: 5px;
    box-shadow: 0px 5px 17px 10px rgba(0,0,0,0.1);
 }
 #work .workcard:hover{
@@ -471,7 +472,7 @@ font-size:25px;
 }
 
 section#work .grid-con {
-   margin-top: 35px;
+   margin-top: 1px;
 }
 img.face-image {
    border-radius: 50%;
@@ -755,7 +756,7 @@ body.fadeOut {
 
 /* Add your animation styles */
 .mygalleryimg:hover {
-    animation: scaleUp 0.3s ease-in-out;
+    animation: scaleUp 0.03s ease-in-out;
 }
 
 @keyframes scaleUp {
@@ -825,5 +826,92 @@ body.fadeOut {
   }
 
   
+}
+
+
+#heroImg {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 600px) {
+  #heroImg {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+     background-size: cover;
+  }
+}
+
+#heroImg .heroTxtWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 6.25rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  color: white;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+}
+
+.image {
+  width: 100%; /* Set a fixed width */
+  height: 350px; /* Set a fixed height */
+}
+@media (min-width: 600px) {
+  #heroImg .heroTxtWrap {
+    text-align: left;
+    margin-left: 10%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+#heroImg .heroTxtWrap .heroHeading {
+  margin-top: 6rem;
+  font-size: 2.8125rem;
+  padding-bottom: 3.125rem;
+}
+
+#heroImg .heroTxtWrap .heroSubHeading {
+  font-size: 2.5rem;
+  line-height: 2.9375rem;
+  padding-bottom: 5rem;
+}
+
+#heroImg .my-img {
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: animation 6s ease-in-out infinite;
+          animation: animation 6s ease-in-out infinite;
+}
+
+#heroImg .my-img img {
+  width: 500px;
 }
 
