@@ -27,6 +27,16 @@ function openGrapics() {
                 window.location.href = url;
         }, 200);
 }
+function opencasestudy() {
+        var url = 'casestudy.html';
+
+        document.body.classList.add('fadeOut');
+
+        setTimeout(function () {
+                window.location.href = url;
+        }, 200);
+}
+
 function openVideos() {
         var url = 'videos.html';
 
@@ -78,7 +88,7 @@ function openMyWork4() {
 
 }
 function openMyWork5() {
-        var url = 'project5.html';
+        var url = 'Anti-Smoking Advertising Campaign.html';
 
         document.body.classList.add('fadeOut');
 
@@ -88,7 +98,7 @@ function openMyWork5() {
 
 }
 function openMyWork6() {
-        var url = 'project6.html';
+        var url = 'Reebok EasyTone Shoe Advertising Campaign.html';
 
         document.body.classList.add('fadeOut');
 
@@ -98,7 +108,7 @@ function openMyWork6() {
 
 }
 function openMyWork7() {
-        var url = 'project7.html';
+        var url = 'Ginga Fleets ( Logistics Company ).html';
 
         document.body.classList.add('fadeOut');
 
@@ -108,7 +118,7 @@ function openMyWork7() {
 
 }
 function openMyWork8() {
-        var url = 'project8.html';
+        var url = 'Bayengage E-store website design.html';
 
         document.body.classList.add('fadeOut');
 
@@ -118,7 +128,7 @@ function openMyWork8() {
 
 }
 function openMyWork9() {
-        var url = 'project9.html';
+        var url = 'PSR silks.html';
 
         document.body.classList.add('fadeOut');
 
@@ -128,7 +138,28 @@ function openMyWork9() {
 
 }
 function openMyWork10() {
-        var url = 'project10.html';
+        var url = 'Cybernexa.html';
+
+        document.body.classList.add('fadeOut');
+
+        setTimeout(function () {
+                window.location.href = url;
+        }, 200);
+
+}
+
+function openMycasestudy1() {
+        var url = 'casestudy1.html';
+
+        document.body.classList.add('fadeOut');
+
+        setTimeout(function () {
+                window.location.href = url;
+        }, 200);
+
+}
+function openMycasestudy2() {
+        var url = 'casestudy2.html';
 
         document.body.classList.add('fadeOut');
 
@@ -173,31 +204,31 @@ window.onload = function () {
 
 };
 
- 
+
 var heroHeading = new SplitType("#heroHeading", { type: "chars" });
 var heroSubHeading = new SplitType("#heroSubHeading", { type: "chars" });
 var animationHeading = new SplitType("#animationHeading", { type: "chars" });
 
-var chars = heroHeading.chars;  
-var chars1 = heroSubHeading.chars;  
-var chars2=animationHeading.chars
+var chars = heroHeading.chars;
+var chars1 = heroSubHeading.chars;
+var chars2 = animationHeading.chars
 
 gsap.from(chars, {
-    duration: .5,
-    opacity: 0,
-    y: 100,
-    stagger: 0.05,
-    ease: "power4.out",
-    color: "#00FF00" // Green color
+        duration: .5,
+        opacity: 0,
+        y: 100,
+        stagger: 0.05,
+        ease: "power4.out",
+        color: "#00FF00" // Green color
 });
 gsap.from(chars1, {
         duration: 1,
         opacity: 0,
         y: -100, //  
         stagger: 0.05,
-        ease: "elastic.out(1, 0.3)",  
-        color: "#FFC0CB" 
-    });
+        ease: "elastic.out(1, 0.3)",
+        color: "#FFC0CB"
+});
 
 gsap.from(chars2, {
         duration: 1,
@@ -206,56 +237,89 @@ gsap.from(chars2, {
         stagger: 0.150,
         ease: "power7.out",
         color: "#FFC0CB" // pink color
-    });
+});
 
-    var animation3 = new SplitType("#animation3", { type: "chars" });
+var animation3 = new SplitType("#animation3", { type: "chars" });
 
-    var chars3 = animation3.chars;  
+var chars3 = animation3.chars;
 
-    gsap.from(chars3, {
+gsap.from(chars3, {
         duration: 1,
         opacity: 0,
-        scale: 0, 
+        scale: 0,
         stagger: 0.09,
-        ease: "back.out(10)", 
-        color: "#FFC0CB" 
-    });
-    var animation4 = new SplitType("#animation4", { type: "chars" });
+        ease: "back.out(10)",
+        color: "#FFC0CB"
+});
+var animation4 = new SplitType("#animation4", { type: "chars" });
 
-    var chars4 = animation4.chars;  
+var chars4 = animation4.chars;
 
 
-    gsap.from(chars4, {
+gsap.from(chars4, {
         duration: 1,
         opacity: 0,
-        y: -100,  
-        stagger: 0.1,  
-        ease: "power5.out",  
-        color: "#000FFF",  
-        textDecoration: "none",  
-        fontWeight: "bold"  
-    });
-    
-    gsap.to(".face-image", {
+        y: -100,
+        stagger: 0.1,
+        ease: "power5.out",
+        color: "#000FFF",
+        textDecoration: "none",
+        fontWeight: "bold"
+});
+
+gsap.to(".face-image", {
         y: 20,
         duration: 2,
         repeat: -1,
         yoyo: true,
         ease: "power1.inOut"
-    });
-    gsap.to(".landing-image", {
+});
+gsap.to(".landing-image", {
         y: 50,
         duration: 2,
         repeat: -1,
         yoyo: true,
         ease: "power2.inOut"
-    });
+});
+
+gsap.to(".col-span-ful", {
+        y: 50,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "power2.inOut"
+});
+
+function showTooltip(event) {
+        var imgSrc = event.target.src;
+        var tooltip = document.querySelector('#tooltip');
+        var tooltipImage = document.querySelector('#tooltipImage');
     
-    gsap.to(".col-span-ful", {
-        y: 50,
-        duration: 2,
-        repeat: -1,
-        yoyo: true,
-        ease: "power2.inOut"
-    });
- 
+        // Set the source of the tooltip image
+        tooltipImage.src = imgSrc;
+    
+        // Position the tooltip next to the hovered image
+        var boundingRect = event.target.getBoundingClientRect();
+        tooltip.style.top = boundingRect.top + 'px';
+        tooltip.style.left = (boundingRect.right + 10) + 'px'; // Adjust the distance from the image as needed
+    
+        // Display the tooltip
+        tooltip.style.display = 'block';
+    }
+    
+    function hideTooltip() {
+        document.querySelector('#tooltip').style.display = 'none';
+    }
+    function showPreview(imgId) {
+        var previewId = "preview" + imgId.slice(-1);
+        var preview = document.getElementById(previewId);
+        preview.style.display = 'block';
+    }
+    
+    function hidePreview(imgId) {
+        var previewId = "preview" + imgId.slice(-1);
+        var preview = document.getElementById(previewId);
+        preview.style.display = 'none';
+    }
+    
+    
