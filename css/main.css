@@ -409,7 +409,7 @@ footer h3 {
    margin-top: 40px;
 }
 
-p.footer-copyright {}
+ 
 
 section#testimonial {
    background: #f1f1f1;
@@ -914,4 +914,36 @@ body.fadeOut {
 #heroImg .my-img img {
   width: 500px;
 }
+.preview {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+}
 
+.mygalleryimg:hover + .preview {
+  display: block;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+h1, h2, p {
+  margin-bottom: 20px;
+}
+.highlight {
+  color: #069;
+  font-weight: bold;
+}
+.highlight-bg {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.solution-item {
+  margin-bottom: 10px;
+}
