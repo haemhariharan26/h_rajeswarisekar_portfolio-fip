@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Haem Hariharan Project</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/SplitText.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main.js"></script>
+
+
+
+</head>
+
+<body>
+    <h1 class="hidden">Haem Hariharan Project</h1>
+    <header id="main-header" class="grid-con">
+        <div class="m-col-start-1 m-col-end-3 col-span-2">
+            <div id="logo" onclick="openIndex()">
+                <img src="images/Logo/logo.png" alt="Logo">
+            </div>
+        </div>
+
+        <div class="navigation-item m-col-start-3 m-col-end-5 col-span-2">
+            <div id="3d" onclick="openVideos()">3D Video</div>
+        </div>
+        <div class="navigation-item m-col-start-5 m-col-end-8 col-span-2">
+            <div id="grapics"  onclick="openGrapics()" href="gallery.html">Graphic Design</div>
+        </div> 
+        <div class="navigation-item m-col-start-8 m-col-end-10 col-span-2">
+            <div id="grapics"  onclick="opencasestudy()" href="casestudy.html">Case study</div>
+        </div>
+        <div class="navigation-button m-col-start-11 m-col-end-13 col-span-2" onclick="openContact()">
+            <div id="sayhello">Say Hello</div>
+        </div>
+        <div class="navigation " id="navigation">
+
+        </div>
+
+
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+
+    <div>
+        
+ 
+
+       
+
+
+        <section id="work">
+           <div class="container">
+        <h1>Case Study: Optimizing Logistics with a Transport Management System</h1>
+        <p class="highlight">Client: GingaFleets Enterprises</p>
+        <p class="highlight">Industry: Logistics & Transportation</p>
+
+        <h2>Overview:</h2>
+        <p>GingaFleets Enterprises is a leading logistics company, providing freight and transportation services to clients worldwide. With a rapidly growing customer base and a complex network of routes, the company was facing challenges in managing their fleet efficiently. They sought to enhance their operations by implementing a robust Transport Management System (TMS) that could <span class="highlight">optimize route planning, streamline dispatching, and improve overall fleet performance</span>.</p>
+
+        <h2>Challenges:</h2>
+        <ol>
+            <li><span class="highlight">Inefficient Route Planning:</span> The existing manual route planning process was time-consuming and prone to human errors, leading to suboptimal routes and increased fuel consumption.</li>
+            <li><span class="highlight">Lack of Real-Time Visibility:</span> The company lacked real-time visibility into their fleet's location, resulting in delayed responses to customer queries and inefficient resource allocation.</li>
+            <li><span class="highlight">Ineffective Dispatching:</span> Manual dispatching processes made it difficult to assign drivers to tasks efficiently, leading to delays in delivery and customer dissatisfaction.</li>
+            <li><span class="highlight">Limited Performance Monitoring:</span> There was no comprehensive system in place to monitor and analyze fleet performance, making it challenging to identify areas for improvement.</li>
+        </ol>
+
+        <h2>Solution:</h2>
+        <p>After a thorough evaluation of various TMS solutions, GingaFleets Enterprises partnered with ABC Technologies to implement their cutting-edge Transport Management System. The solution included the following key features:</p>
+        <ul>
+            <li class="solution-item"><span class="highlight">Automated Route Planning:</span> The TMS utilized advanced algorithms to optimize routes based on factors such as distance, traffic conditions, and delivery time windows, resulting in reduced fuel consumption and improved delivery times.</li>
+            <li class="solution-item"><span class="highlight">Real-Time Fleet Tracking:</span> The system integrated GPS technology to provide real-time visibility into the location and status of each vehicle, enabling better decision-making and enhanced customer communication.</li>
+            <li class="solution-item"><span class="highlight">Dynamic Dispatching:</span> The TMS automatically assigned tasks to drivers based on their location, availability, and skill set, ensuring optimal resource utilization and timely deliveries.</li>
+            <li class="solution-item"><span class="highlight">Performance Analytics:</span> Comprehensive analytics and reporting tools allowed GingaFleets Enterprises to monitor fleet performance in real-time, identify inefficiencies, and make data-driven decisions to enhance operations.</li>
+        </ul>
+
+        <h2>Results:</h2>
+        <ol>
+            <li><span class="highlight">Increased Efficiency:</span> The TMS improved route planning and dispatching processes, resulting in a 20% reduction in fuel consumption and a 15% increase in delivery efficiency.</li>
+            <li><span class="highlight">Enhanced Customer Satisfaction:</span> Real-time tracking and accurate ETAs enabled better customer communication and reduced customer complaints by 30%.</li>
+            <li><span class="highlight">Improved Resource Utilization:</span> The dynamic dispatching feature optimized driver assignments, leading to a 25% reduction in idle time and better utilization of available resources.</li>
+            <li><span class="highlight">Data-Driven Decision Making:</span> The TMS provided valuable insights into fleet performance, enabling GingaFleets Enterprises to identify bottlenecks and implement targeted improvements.</li>
+        </ol>
+
+        <h2>Conclusion:</h2>
+        <p>By leveraging ABC Technologies' Transport Management System, GingaFleets Enterprises achieved significant improvements in fleet efficiency, customer satisfaction, and resource utilization. The TMS enabled the company to streamline its operations, reduce costs, and gain a competitive edge in the logistics industry.</p>
+    </div>
+             
+
+        </section>
+ 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+
+
+            gsap.utils.toArray('section').forEach(section => {
+                gsap.to(section, {
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: section,
+                        start: 'top 100%',
+                        end: 'bottom 80%',
+                        scrub: true
+                    }
+                });
+            });
+
+
+
+        </script>
+    </div>
+    <footer class="full-width-grid-con">
+        <div class="col-span-full">
+            <p class="footer-title">Living, learning, &amp; leveling up<br>
+                one day at a time</p>
+
+
+            <h4>Linkedin</h4>
+            <p>https://www.linkedin.com/feed/</p>
+
+            <h4>Email</h4>
+            <p>haem@gmail.com</p>
+
+
+            <h3>Copyright 2023. All Right Reserved </h3>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+   
+
+
+
+</body>
+
+</html>

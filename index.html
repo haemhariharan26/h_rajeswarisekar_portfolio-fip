@@ -27,11 +27,14 @@
             </div>
         </div>
 
-        <div class="navigation-item m-col-start-5 m-col-end-7 col-span-2">
+        <div class="navigation-item m-col-start-3 m-col-end-5 col-span-2">
             <div id="3d" onclick="openVideos()">3D Video</div>
         </div>
+        <div class="navigation-item m-col-start-5 m-col-end-8 col-span-2">
+            <div id="grapics"  onclick="openGrapics()" href="gallery.html">Graphic Design</div>
+        </div> 
         <div class="navigation-item m-col-start-8 m-col-end-10 col-span-2">
-            <div id="graphics" onclick="openGraphics()">Graphic Design</div>
+            <div id="grapics"  onclick="opencasestudy()" href="casestudy.html">Case study</div>
         </div>
         <div class="navigation-button m-col-start-11 m-col-end-13 col-span-2" onclick="openContact()">
             <div id="sayhello">Say Hello</div>
@@ -85,11 +88,14 @@
                 <h3>Here are a few past design projects I've worked on. Want to see more? Email me.</h3>
             </div>
 
-
+            
 
             <div class="grid-con">
-                <div onclick="openMyWork1()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Bayengage">
-                    <img class="image" src="images/Bayengage/BayengageProject-image.jpg">
+                <div onclick="openMyWork1()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Bayengage" onmouseover="showPreview('img1')" onmouseout="hidePreview('img1')">
+                    <img id="img1" class="image" src="images/Bayengage/BayengageProject-image.jpg">
+                    <div class="preview" id="preview1">
+                        <img src="images/Bayengage/BayengageProject-image.jpg">
+                    </div>
                 </div>
                 <div onclick="openMyWork2()" class="col-span-full m-col-start-7 m-col-end-12 workcard"
                     title="Dr.Nut Beer">
@@ -108,36 +114,37 @@
             </div>
             <div class="grid-con">
 
-                <div onclick="openMyWork5()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Kavorca">
+                <div onclick="openMyWork5()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title=" Anti-Smoking Advertising Campaign">
                     <img class="image" src="images/project images/project-5/anti-smoking-Ad-poster3.jpg">
                 </div>
 
-                <div onclick="openMyWork6()" class="  m-col-start-7 m-col-end-12 workcard" title="Earbud">
+                <div onclick="openMyWork6()"  class="  m-col-start-7 m-col-end-12 workcard" title=" Reebok EasyTone Shoe Advertising Campaign " >
                     <img class="image" src="images/project images/project-6/POSTER-2.jpg">
                 </div>
             </div>
+             
             <div class="grid-con">
 
-                <div onclick="openMyWork7()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Kavorca">
+                <div onclick="openMyWork7()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title=" Ginga Fleets ( Logistics Company )">
                     <img class="image" src="images/project images/project-7/front cover page.jpg">
                 </div>
 
-                <div onclick="openMyWork8()" class="col-span-full m-col-start-7 m-col-end-12 workcard" title="Earbud">
+                <div onclick="openMyWork8()" class="col-span-full m-col-start-7 m-col-end-12 workcard" title="Bayengage E-store website design">
                     <img class="image" src="images/project images/project-8/Landing page 5.jpg">
                 </div>
             </div>
             <div class="grid-con">
 
-                <div onclick="openMyWork9()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Kavorca">
+                <div onclick="openMyWork9()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="PSR silks">
                     <img class="image" src="images/project images/PROJECT-9/saree-7.JPG">
                 </div>
 
-                <div onclick="openMyWork10()" class="col-span-full m-col-start-7 m-col-end-12 workcard" title="Earbud">
+                <div onclick="openMyWork10()" class="col-span-full m-col-start-7 m-col-end-12 workcard" title="Cybernexa">
                     <img class="image" src="images/project images/project-10/final front cover.jpg">
                 </div>
             </div>
 
-
+            
 
 
 

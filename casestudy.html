@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Haem Hariharan Project</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/SplitText.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main.js"></script>
+
+
+
+</head>
+
+<body>
+    <h1 class="hidden">Haem Hariharan Project</h1>
+    <header id="main-header" class="grid-con">
+        <div class="m-col-start-1 m-col-end-3 col-span-2">
+            <div id="logo" onclick="openIndex()">
+                <img src="images/Logo/logo.png" alt="Logo">
+            </div>
+        </div>
+
+        <div class="navigation-item m-col-start-3 m-col-end-5 col-span-2">
+            <div id="3d" onclick="openVideos()">3D Video</div>
+        </div>
+        <div class="navigation-item m-col-start-5 m-col-end-8 col-span-2">
+            <div id="grapics"  onclick="openGrapics()" href="gallery.html">Graphic Design</div>
+        </div> 
+        <div class="navigation-item m-col-start-8 m-col-end-10 col-span-2">
+            <div id="grapics"  onclick="opencasestudy()" href="casestudy.html">Case study</div>
+        </div>
+        <div class="navigation-button m-col-start-11 m-col-end-13 col-span-2" onclick="openContact()">
+            <div id="sayhello">Say Hello</div>
+        </div>
+        <div class="navigation " id="navigation">
+
+        </div>
+
+
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+
+    <div>
+        
+ 
+
+       
+
+
+        <section id="work">
+            <div class="col-span-full">
+                <h1>My Casre studies
+
+                </h1>
+                <h3>Here are a few past case studies I've worked on.</h3>
+            </div>
+
+
+
+            <div class="grid-con">
+                <div onclick="openMycasestudy1()" class="col-span-full m-col-start-2 m-col-end-7 workcard" title="Bayengage">
+                    <img class="image" src="images/project images/project-7/front cover page.jpg">
+                </div>
+                <div onclick="openMycasestudy2()" class="col-span-full m-col-start-7 m-col-end-12 workcard"
+                    title="Dr.Nut Beer">
+                    <img class="image" src="images/project images/project-10/final front cover.jpg">
+                </div>
+            </div>
+             
+
+        </section>
+ 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+
+
+            gsap.utils.toArray('section').forEach(section => {
+                gsap.to(section, {
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: section,
+                        start: 'top 100%',
+                        end: 'bottom 80%',
+                        scrub: true
+                    }
+                });
+            });
+
+
+
+        </script>
+    </div>
+    <footer class="full-width-grid-con">
+        <div class="col-span-full">
+            <p class="footer-title">Living, learning, &amp; leveling up<br>
+                one day at a time</p>
+
+
+            <h4>Linkedin</h4>
+            <p>https://www.linkedin.com/feed/</p>
+
+            <h4>Email</h4>
+            <p>haem@gmail.com</p>
+
+
+            <h3>Copyright 2023. All Right Reserved </h3>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+   
+
+
+
+</body>
+
+</html>
